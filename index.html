@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Patient Dashboard</title>
+
+
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <img src="logo.svg" alt="logo">
+
+    </div>
+
+    <nav class="nav">
+
+        <img src="home.svg">
+
+        <span>Overview</span>
+
+        <img src="contact.svg">
+
+        <span >Patients</span>
+
+        <img src="calendar.svg">
+
+        <span>Schedule</span>
+
+        <img src="message.svg">
+
+        <span>Message</span>
+
+        <img src="transaction.svg">
+
+        <span>Transactions</span>
+
+    </nav>
+
+</header>
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h3>Patients  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="search.svg"></h3>
+        <div class="patient">
+            <img src="emily.png">
+            <span>Emily Williams</span> <br>
+
+            
+            
+        </div>
+
+        
+         <div class="patient">
+            <img src="Ryan.png">
+            <span>Ryan Johnson</span>
+        </div>
+
+        
+         <div class="patient">
+            <img src="Brandon.png">
+            <span>Brandon Mitchell</span>
+        </div>
+
+        <div class="patient">
+            <img src="Jessica.png">
+            <span>Jessica Taylor</span>
+        </div>
+
+        <div class="patient">
+            <img src="Samantha.png">
+            <span>Samantha Johnson</span>
+        </div>
+
+        <div class="patient">
+            <img src="Ashley.png">
+            <span>Ashley Marthinez</span>
+        </div>
+
+        
+         <div class="patient">
+            <img src="olivia.png">
+            <span>Olivia Brown</span>
+        </div>
+
+        
+         <div class="patient">
+            <img src="Tyler.png">
+            <span>Tyler Davis</span>
+        </div>
+
+         <div class="patient">
+            <img src="Kevin.png">
+            <span>Kevin Anerson</span>
+        </div>
+        
+
+        
+         <div class="patient">
+            <img src="Dylan.png">
+            <span>Dylan Thompson</span>
+        </div>
+
+
+    
+         <div class="patient">
+            <img src="Nathan.png">
+            <span>Nathan Evans</span>
+        </div>
+
+        
+         <div class="patient">
+            <img src="Mike.png">
+            <span>Mike  Nolan</span>
+        </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Chart -->
+        <section class="chart">
+            <h3>Diagnosis History</h3>
+            <canvas id="bpChart"></canvas>
+        </section>
+
+        <!-- Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <img src="lungs.svg">
+                <h4>Respiratory Rate</h4>
+                <p>20 bpm</p>
+            </div>
+
+            <div class="card">
+                <img src="temperature.svg">
+                <h4>Temperature</h4>
+                <p>98.6 °F</p>
+            </div>
+
+            <div class="card">
+                <img src="heart.svg">
+                <h4>Heart Rate</h4>
+                <p>78 bpm</p>
+            </div>
+
+        </section>
+    
+            <section class="chart">
+                <h3>Diagnostic List</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Problem/Diagnosis</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Hypertension</td>
+                                <td>&nbsp;&nbsp;&nbsp;Chronic high blood pressure</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;Under Observation</td>
+                            </tr>
+                            <tr>
+                                <td>Type 2 Diabetes</td>
+                                <td>&nbsp;&nbsp;&nbspInsulin resistance and elevated blood sugar</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;Cured</td>
+                            </tr>
+                            <tr>
+                                <td>Asthma</td>
+                                <td>&nbsp;&nbsp;&nbspRecurrent episodes of bronchial constriction</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;Inactive</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <aside class="right-panel">
+            <div class="profile-summary">
+                <img src="jessica large.png" class="profile-img">
+                <h3>Jessica Taylor</h3>
+            </div>
+
+            <div class="info-list">
+                <div class="info-item">
+                    <img src="calendar.svg">
+                    <div>
+                        <p class="label">Date Of Birth</p>
+                        <p class="value">August 23, 1996</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="FemaleIcon.svg">
+                    <div>
+                        <p class="label">Gender</p>
+                        <p class="value">Female</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="PhoneIcon.svg">
+                    <div>
+                        <p class="label">Contact Info.</p>
+                        <p class="value">(415) 555-1234</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="PhoneIcon.svg">
+                    <div>
+                        <p class="label">Emergency Contacts</p>
+                        <p class="value">(415) 555-5678</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="InsuranceIcon.svg">
+                    <div>
+                        <p class="label">Insurance Provider</p>
+                        <p class="value">Sunrise Health Assurance</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-info">Show All Information</button>
+
+            <section class="lab-results">
+                <h3>Lab Results</h3>
+                <ul class="lab-list">
+                    <li>Blood Tests <img src="download.svg"></li>
+                    <li class="active">CT Scans <img src="download.svg"></li>
+                    <li>Radiology Reports <img src="download.svg"></li>
+                    <li>X-Rays <img src="download.svg"></li>
+                    <li>Urine Test <img src="download.svg"></li>
+                </ul>
+            </section>
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
